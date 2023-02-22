@@ -164,12 +164,12 @@
     <section id="projects">
         <h1>My projects</h1>
         <div class="projects__categories">
-            <button class="category__btn">
-                All<span class="category__count"></span>8</button>
-            <button class="category__btn">
+            <button class="category__btn" data-filter="*">
+                All<span class="category__count">8</span></button>
+            <button class="category__btn" data-filter="Indivisual">
                 Indivisual<span class="category__count">6</span></button>
-            <button class="category__btn">
-                Team<span class="category__count"></span>2</button>
+            <button class="category__btn" data-filter="Team">
+                Team<span class="category__count">2</span></button>
         </div>
         <div class="projects__contents">
             <a href="https://github.com/ParkSohyunee/order-summary-component" 
@@ -239,8 +239,42 @@
         </div>
     </section>
     <!-- Reference -->
-    <section id="testimonial"></section>
+    <section id="testimonial">
+        <h1>Testimonials</h1>
+        <h3>See what they say about me</h3>
+        <div class="testimonial">
+            <article class="testomonial">
+                <img
+                src="images\testimonior_image1.jpg"
+                alt=""
+                class="testmonial_avater"/>
+                <div class="testimonial__speech-bubble">
+                    <p>speech-bubble</p>
+                    <p class="name">coworker1</p>
+                </div>
+            </article>
+            <article class="testomonial">
+                <img
+                src="images\testimonior_image2.jpg"
+                alt=""
+                class="testmonial_avater"/>
+                <div class="testimonial__speech-bubble">
+                    <p>speech-bubble</p>
+                    <p class="name">coworker2</p>
+                </div>
+            </article>
+        </div>
+    </section>
     <!-- Contact -->
-    <section id="contact"></section>
+    <section id="contact">
+        <h1 class="contact__title">Let's talk</h1>
+        <h2 class="contact__emaile">sohyunee016@gmail.com</h2>
+        <div class="contact__links">
+            <a href="https://github.com/ParkSohyunee" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+        <p class="contact__rights">Made by me from February 2023 and still in progress.</p>
+    </section>
 </body>
 </html>
