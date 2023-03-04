@@ -29,6 +29,9 @@
 
     /* Size */
     --size-border-radius: 4px;
+
+    /* Animation */
+    --animation-duration: 300ms;
 }
 
 /* Universal tags */
@@ -187,4 +190,26 @@ p {
     border: 1px solid var(--color-light-green);
     border-radius: 50%;
     margin-bottom: 16px;
+}
+
+.major__icon i {
+    transition: all var(--animation-duration) ease;
+}
+
+.major__icon:hover i {      /* .major__icon i:hover */
+    color: var(--color-blue);
+    transform: rotate(-30deg) scale(1.1);
+}
+.major__title, .major__description {
+    color: var(--color-dark-grey);
+}
+
+.major__desc {
+    font-size: var(--font-small);
+}
+
+.about__learn {
+    text-align: left;
+    color: var(--color-light-grey);
+    font-size: var(--font-small);
 }
