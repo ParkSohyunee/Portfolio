@@ -1,281 +1,309 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sohyun's Portfolio</title>
-    <meta 
-        name="description" 
-        content="Portfolio for frontend-developer Sohyun">
-    <meta 
-        name="author" 
-        content="Park-Sohyun">
-    <link rel="icon" type="image/png" href="images\My_favicon-removebg-preview.png">
-    <script 
-        src="https://kit.fontawesome.com/6ba38cf493.js" 
-        crossorigin="anonymous"></script>
-    <link 
-        href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;600&display=swap" 
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
-</head>
-<body>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    <title>Sohyun&#39;s Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio for frontend-developer Sohyun"
+    />
+    <meta name="author" content="Park-Sohyun" />
+    <!-- OG (Open Graph Data) -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <meta property="og:title" content="프론트엔드 개발자의 포트폴리오" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="베포후 생성된 URL" />
+    <meta property="og:image" content="배포후에 생성된 이미지 URL" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/6ba38cf493.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- JavaScript -->
+    <script src="/src/main.js" defer></script>
+  </head>
+  <body>
     <!-- Navbar -->
     <nav id="navbar">
-        <div class="navbar__logo">
-            <img class="logo" src="images\navbar-logo--removebg-preview.png" alt="logo-image">
-            <a href="#">Developer Sohyun</a>
-        </div>
-        <div>
-            <ul class="navbar__menu">
-                <li class="navbar__menu__item active">Home</li>
-                <li class="navbar__menu__item">About</li>
-                <li class="navbar__menu__item">Skills</li>
-                <li class="navbar__menu__item">Projects</li>
-                <li class="navbar__menu__item">Testimonial</li>
-                <li class="navbar__menu__item">Contact</li>
-            </ul>
-        </div>
+      <div class="navbar__logo">
+        <img
+          class="logo"
+          src="images\navbar-logo--removebg-preview.png"
+          alt="logo-image"
+        />
+        <a href="#">Developer Sohyun</a>
+      </div>
+      <div>
+        <ul class="navbar__menu">
+          <li class="navbar__menu__item active">Home</li>
+          <li class="navbar__menu__item">About</li>
+          <li class="navbar__menu__item">Skills</li>
+          <li class="navbar__menu__item">Projects</li>
+          <li class="navbar__menu__item">Testimonial</li>
+          <li class="navbar__menu__item">Contact</li>
+        </ul>
+      </div>
     </nav>
     <!-- Home -->
     <section id="home">
-        <img src="images\home_image.png" alt="my photo" class="home__avatar">
-        <h1 class="home__title">Welcome!<br>I'm junior frontend-developer</h1>
-        <h2 class="home__description">I'll show you my growth record as a developer.</h2>
-        <button class="home__contact">Contact Me</button>
+      <img src="images\home_image.png" alt="my photo" class="home__avatar" />
+      <h1 class="home__title">Welcome!<br />I'm junior frontend-developer</h1>
+      <h2 class="home__description">
+        I'll show you my growth record as a developer.
+      </h2>
+      <button class="home__contact">Contact Me</button>
     </section>
     <!-- About -->
     <section id="about" class="section">
-        <h1>About me</h1>
-        <p>
-            Developers who learn and apply various things quickly 
-            because of my strong basic skills. 
-            Also, Thinking about user usability and experience, 
-            I want to be interested in drawing user WowPoint rather than simply focusing on convenience only, 
-            and I want to be a member who studies and interests in various ways 
-            to collaborate and communicate with various people.
-        </p>
-        <div class="about__major">
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fa-brands fa-html5"></i>
-                </div>
-                <h2 class="major__title">HTML</h2>
-                <div class="major__description">Semantic HTML5 markup</div>
-            </div>
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fa-brands fa-css3-alt"></i>
-                </div>
-                <h2 class="major__title">CSS</h2>
-                <div class="major__description"> CSS custom properties,<br/>Grid and Mediaquery</div>
-            </div>
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fa-brands fa-square-js"></i>
-                </div>
-                <h2 class="major__title">JavaScript</h2>
-                <div class="major__description">React, TypeScript</div>
-            </div>
+      <h1>About me</h1>
+      <p>
+        Developers who learn and apply various things quickly because of my
+        strong basic skills. Also, Thinking about user usability and experience,
+        I want to be interested in drawing user WowPoint rather than simply
+        focusing on convenience only, and I want to be a member who studies and
+        interests in various ways to collaborate and communicate with various
+        people.
+      </p>
+      <div class="about__major">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fa-brands fa-html5"></i>
+          </div>
+          <h2 class="major__title">HTML</h2>
+          <div class="major__description">Semantic HTML5 markup</div>
         </div>
-        <div class="about__learn">
-            <p class="learn__name">Code Camp</p>
-            <p class="learn__period">2023. March 6th - May 26th.</p>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fa-brands fa-css3-alt"></i>
+          </div>
+          <h2 class="major__title">CSS</h2>
+          <div class="major__description">
+            CSS custom properties,<br />Grid and Mediaquery
+          </div>
         </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fa-brands fa-square-js"></i>
+          </div>
+          <h2 class="major__title">JavaScript</h2>
+          <div class="major__description">React, TypeScript</div>
+        </div>
+      </div>
+      <div class="about__learn">
+        <p class="learn__name">Code Camp</p>
+        <p class="learn__period">2023. March 6th - May 26th.</p>
+      </div>
     </section>
     <!-- Skills -->
     <section id="skills" class="section">
-        <h1>Skills</h1>
-        <h2>Skills & Attributes</h2>
-        <p>description</p>
-        <div class="skillset">
-            <article class="skillset__left">
-                <h3 class="skillset__title">Skills</h3>
-                <div class="skill">
-                    <div class="skill_description">
-                        <span>HTML</span>
-                        <span>100%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>  
-                </div>
-                <div class="skill">
-                    <div class="skill_description">
-                        <span>CSS</span>
-                        <span>100%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>  
-                </div>
-                <div class="skill">
-                    <div class="skill_description">
-                        <span>JavaScript</span>
-                        <span>100%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>  
-                </div>
-                <div class="skill">
-                    <div class="skill_description">
-                        <span>SQL(MySQL/PostgreSQL)</span>
-                        <span>100%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>  
-                </div>
-                <div class="skill">
-                    <div class="skill_description">
-                        <span>Python(Pandas Library)</span>
-                        <span>100%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>  
-                </div>
-            </article>
-            <article class="skillset__right">
-                <div class="tools">
-                    <h3 class="skillset__title">Tools</h3>
-                    <ul class="tools__list">
-                        <li><span>Visual Studio Code</span></li>
-                        <li><span>Sublime Text</span></li>
-                        <li><span>One Note</span></li>
-                        <li><span>DBaver</span></li>
-                        <li><span>--</span></li>
-                    </ul>
-                </div>
-                <div class="etc">
-                    <h3 class="skillset__title">Etc</h3>
-                    <ul class="etc__list">
-                        <li><span>Github, Slack, Notion</span></li>
-                        <li><span>Scrum master</span></li>
-                        <li><span>Data Analysis</span></li>
-                    </ul>
-                </div>
-            </article>
-        </div>
+      <h1>Skills</h1>
+      <h2>Skills & Attributes</h2>
+      <p>description</p>
+      <div class="skillset">
+        <article class="skillset__left">
+          <h3 class="skillset__title">Skills</h3>
+          <div class="skill">
+            <div class="skill_description">
+              <span>HTML</span>
+              <span>100%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill_description">
+              <span>CSS</span>
+              <span>100%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill_description">
+              <span>JavaScript</span>
+              <span>100%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill_description">
+              <span>SQL(MySQL/PostgreSQL)</span>
+              <span>100%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill_description">
+              <span>Python(Pandas Library)</span>
+              <span>100%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value"></div>
+            </div>
+          </div>
+        </article>
+        <article class="skillset__right">
+          <div class="tools">
+            <h3 class="skillset__title">Tools</h3>
+            <ul class="tools__list">
+              <li><span>Visual Studio Code</span></li>
+              <li><span>Sublime Text</span></li>
+              <li><span>One Note</span></li>
+              <li><span>DBaver</span></li>
+              <li><span>--</span></li>
+            </ul>
+          </div>
+          <div class="etc">
+            <h3 class="skillset__title">Etc</h3>
+            <ul class="etc__list">
+              <li><span>Github, Slack, Notion</span></li>
+              <li><span>Scrum master</span></li>
+              <li><span>Data Analysis</span></li>
+            </ul>
+          </div>
+        </article>
+      </div>
     </section>
     <!-- Projects -->
     <section id="projects" class="section">
-        <h1>My projects</h1>
-        <div class="projects__categories">
-            <button class="category__btn" data-filter="*">
-                All<span class="category__count">8</span></button>
-            <button class="category__btn" data-filter="Indivisual">
-                Indivisual<span class="category__count">6</span></button>
-            <button class="category__btn" data-filter="Team">
-                Team<span class="category__count">2</span></button>
-        </div>
-        <div class="projects__contents">
-            <a href="https://github.com/ParkSohyunee/order-summary-component" 
-            class="project" data-type="Indivisual" target="blank">
-                <img class="project_img" src="images\project1.png" alt="">
-                <div class="project__dsecription">
-                    <h3>Order summary card</h3>
-                    <span>To build out this order summary card component(Desktop & Mobile) with HTML and CSS</span>
-                </div>
-            </a>
-            <a href="" 
-            class="project" data-type="Indivisual" target="blank">
-                <img class="project_img" src="images\project2.png">
-                <div class="project__dsecription">
-                    <h3>project2_title</h3>
-                    <span>project2_description</span>
-                </div>
-            </a>
-            <a href="" 
-            class="project" data-type="Indivisual" target="blank">
-                <img class="project_img" src="images\project3.png">
-                <div class="project__dsecription">
-                    <h3>project3_title</h3>
-                    <span>project3_description</span>
-                </div>
-            </a>
-            <a href="" 
-            class="project" data-type="Indivisual" target="blank">
-                <img class="project_img" src="images\project4.png">
-                <div class="project__dsecription">
-                    <h3>project4_title</h3>
-                    <span>project4_description</span>
-                </div>
-            </a>
-            <a href="" 
-            class="project" data-type="Indivisual" target="blank">
-                <img class="project_img" src="images\project5.png">
-                <div class="project__dsecription">
-                    <h3>project5_title</h3>
-                    <span>project5_description</span>
-                </div>
-            </a>
-            <a href="" 
-            class="project" data-type="Indivisual" target="blank">
-                <img class="project_img" src="images\project6.png">
-                <div class="project__dsecription">
-                    <h3>project6_title</h3>
-                    <span>project6_description</span>
-                </div>
-            </a>
-            <a href="" 
-            class="project" data-type="Indivisual" target="blank">
-                <img class="project_img" src="images\project7.png">
-                <div class="project__dsecription">
-                    <h3>project7_title</h3>
-                    <span>project7_description</span>
-                </div>
-            </a>
-            <a href="" 
-            class="project" data-type="Indivisual" target="blank">
-                <img class="project_img" src="images\project8.png">
-                <div class="project__dsecription">
-                    <h3>project8_title</h3>
-                    <span>project8_description</span>
-                </div>
-            </a>
-        </div>
+      <h1>My projects</h1>
+      <div class="projects__categories">
+        <button class="category__btn" data-filter="*">
+          All<span class="category__count">8</span>
+        </button>
+        <button class="category__btn" data-filter="Indivisual">
+          Indivisual<span class="category__count">6</span>
+        </button>
+        <button class="category__btn" data-filter="Team">
+          Team<span class="category__count">2</span>
+        </button>
+      </div>
+      <div class="projects__contents">
+        <a
+          href="https://github.com/ParkSohyunee/order-summary-component"
+          class="project"
+          data-type="Indivisual"
+          target="blank"
+        >
+          <img class="project_img" src="images\project1.png" alt="" />
+          <div class="project__dsecription">
+            <h3>Order summary card</h3>
+            <span
+              >To build out this order summary card component(Desktop & Mobile)
+              with HTML and CSS</span
+            >
+          </div>
+        </a>
+        <a href="" class="project" data-type="Indivisual" target="blank">
+          <img class="project_img" src="images\project2.png" />
+          <div class="project__dsecription">
+            <h3>project2_title</h3>
+            <span>project2_description</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="Indivisual" target="blank">
+          <img class="project_img" src="images\project3.png" />
+          <div class="project__dsecription">
+            <h3>project3_title</h3>
+            <span>project3_description</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="Indivisual" target="blank">
+          <img class="project_img" src="images\project4.png" />
+          <div class="project__dsecription">
+            <h3>project4_title</h3>
+            <span>project4_description</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="Indivisual" target="blank">
+          <img class="project_img" src="images\project5.png" />
+          <div class="project__dsecription">
+            <h3>project5_title</h3>
+            <span>project5_description</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="Indivisual" target="blank">
+          <img class="project_img" src="images\project6.png" />
+          <div class="project__dsecription">
+            <h3>project6_title</h3>
+            <span>project6_description</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="Indivisual" target="blank">
+          <img class="project_img" src="images\project7.png" />
+          <div class="project__dsecription">
+            <h3>project7_title</h3>
+            <span>project7_description</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="Indivisual" target="blank">
+          <img class="project_img" src="images\project8.png" />
+          <div class="project__dsecription">
+            <h3>project8_title</h3>
+            <span>project8_description</span>
+          </div>
+        </a>
+      </div>
     </section>
     <!-- Reference -->
     <section id="testimonial" class="section">
-        <h1>Testimonials</h1>
-        <h3>See what they say about me</h3>
-        <div class="testimonial">
-            <article class="testomonial">
-                <img
-                src="images\testimonior_image1.jpg"
-                alt=""
-                class="testmonial_avater"/>
-                <div class="testimonial__speech-bubble">
-                    <p>speech-bubble</p>
-                    <p class="name">coworker1</p>
-                </div>
-            </article>
-            <article class="testomonial">
-                <img
-                src="images\testimonior_image2.jpg"
-                alt=""
-                class="testmonial_avater"/>
-                <div class="testimonial__speech-bubble">
-                    <p>speech-bubble</p>
-                    <p class="name">coworker2</p>
-                </div>
-            </article>
-        </div>
+      <h1>Testimonials</h1>
+      <h3>See what they say about me</h3>
+      <div class="testimonial">
+        <article class="testomonial">
+          <img
+            src="images\testimonior_image1.jpg"
+            alt=""
+            class="testmonial_avater"
+          />
+          <div class="testimonial__speech-bubble">
+            <p>speech-bubble</p>
+            <p class="name">coworker1</p>
+          </div>
+        </article>
+        <article class="testomonial">
+          <img
+            src="images\testimonior_image2.jpg"
+            alt=""
+            class="testmonial_avater"
+          />
+          <div class="testimonial__speech-bubble">
+            <p>speech-bubble</p>
+            <p class="name">coworker2</p>
+          </div>
+        </article>
+      </div>
     </section>
     <!-- Contact -->
     <section id="contact" class="section">
-        <h1 class="contact__title">Let's talk</h1>
-        <h2 class="contact__emaile">sohyunee016@gmail.com</h2>
-        <div class="contact__links">
-            <a href="https://github.com/ParkSohyunee" target="_blank">
-                <i class="fa-brands fa-github"></i>
-            </a>
-        </div>
-        <p class="contact__rights">Made by me from February 2023 and still in progress.</p>
+      <h1 class="contact__title">Let's talk</h1>
+      <h2 class="contact__emaile">sohyunee016@gmail.com</h2>
+      <div class="contact__links">
+        <a href="https://github.com/ParkSohyunee" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+      <p class="contact__rights">
+        Made by me from February 2023 and still in progress.
+      </p>
     </section>
-</body>
+  </body>
 </html>
