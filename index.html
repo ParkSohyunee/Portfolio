@@ -36,23 +36,27 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
+    <header class="header">
       <!-- Logo -->
-      <div>
-        <img class="logo" src="images/favicon.ico" alt="logo-image" />
-        <h1><a href="#">Developer Sohyun</a></h1>
+      <div class="header__logo">
+        <img
+          class="header__logo__img"
+          src="images/favicon.ico"
+          alt="logo-image"
+        />
+        <h1 class="header__logo__title"><a href="#"> Developer Sohyun</a></h1>
       </div>
       <!-- Navbar -->
-      <nav id="navbar">
+      <nav>
         <ul class="navbar__menu">
-          <li class="navbar__menu__item active"><a href="#home">Home</a></li>
-          <li class="navbar__menu__item"><a href="#about">About</a></li>
-          <li class="navbar__menu__item"><a href="#skills">Skills</a></li>
-          <li class="navbar__menu__item"><a href="#projects">Projects</a></li>
-          <li class="navbar__menu__item">
-            <a href="#testimonial">Testimonial</a>
+          <li><a class="navbar__menu__item active" href="#home">Home</a></li>
+          <li><a class="navbar__menu__item" href="#about">About</a></li>
+          <li><a class="navbar__menu__item" href="#skills">Skills</a></li>
+          <li><a class="navbar__menu__item" href="#projects">Projects</a></li>
+          <li>
+            <a class="navbar__menu__item" href="#testimonial">Testimonial</a>
           </li>
-          <li class="navbar__menu__item"><a href="#contact">Contact</a></li>
+          <li><a class="navbar__menu__item" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -66,17 +70,18 @@
           class="home__avatar"
         />
         <h2 class="home__title">
-          Welcome!<br />I&#39;m junior frontend-developer
+          Welcome!<br />I&#39;m junior
+          <strong class="home__title--strong">frontend-developer</strong>
         </h2>
         <p class="home__description">
           I&#39;ll show you my growth record as a developer.
         </p>
-        <a href="#contact">Contact Me</a>
+        <a class="home__contact" href="#contact">Contact Me</a>
       </section>
       <!-- About -->
-      <section id="about" class="section">
-        <h2>About me</h2>
-        <p>
+      <section id="about" class="section max-container">
+        <h2 class="title">About me</h2>
+        <p class="description">
           Developers who learn and apply various things quickly because of my
           strong basic skills. Also, Thinking about user usability and
           experience, I want to be interested in drawing user WowPoint rather
@@ -84,246 +89,290 @@
           who studies and interests in various ways to collaborate and
           communicate with various people.
         </p>
-        <ul>
-          <li>
-            <i class="fa-brands fa-html5"></i>
+        <ul class="majors">
+          <li class="major">
+            <i class="fa-brands fa-html5 major__icon"></i>
             <p class="major__title">HTML</p>
             <p class="major__description">Semantic HTML5 markup</p>
           </li>
-          <li>
-            <i class="fa-brands fa-css3-alt"></i>
+          <li class="major">
+            <i class="fa-brands fa-css3-alt major__icon"></i>
             <p class="major__title">JavaScript</p>
             <p class="major__description">CSS custom properties</p>
             <p class="major__description">Grid and Mediaquery</p>
           </li>
-          <li>
-            <i class="fa-brands fa-square-js"></i>
+          <li class="major">
+            <i class="fa-brands fa-square-js major__icon"></i>
             <p class="major__title">JavaScript</p>
             <p class="major__description">React, TypeScript</p>
           </li>
         </ul>
-        <ul class="about__learn">
-          <li>
-            <p class="learn__name">Code Camp</p>
-            <p class="learn__period">2023. March 6th - May 26th.</p>
+        <ul class="study">
+          <li class="category">
+            <div>
+              <p class="category__name">Code Camp</p>
+              <p class="category__period">2023. March 6th - May 26th.</p>
+            </div>
           </li>
         </ul>
       </section>
       <!-- Skills -->
       <section id="skills" class="section">
-        <h2>Skills</h2>
-        <p>Skills & Attributes</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-          tempora illo qui, at, in iste eum illum quidem nesciunt voluptatem
-          quisquam a repellendus aliquam quis exercitationem praesentium culpa
-          totam animi!
-        </p>
-        <div class="skillset">
-          <section class="skillset__left">
-            <h3 class="skillset__title">Skills</h3>
-            <ul>
-              <li>
-                <div class="skill_description">
-                  <span>HTML</span>
-                  <span>100%</span>
-                </div>
-                <div class="skill__bar">
-                  <div class="skill__value" style="width: 100%"></div>
-                </div>
-              </li>
-              <li>
-                <div class="skill_description">
-                  <span>CSS</span>
-                  <span>100%</span>
-                </div>
-                <div class="skill__bar">
-                  <div class="skill__value" style="width: 100%"></div>
-                </div>
-              </li>
-              <li>
-                <div class="skill_description">
-                  <span>JavaScript</span>
-                  <span>100%</span>
-                </div>
-                <div class="skill__bar">
-                  <div class="skill__value" style="width: 100%"></div>
-                </div>
-              </li>
-              <li>
-                <div class="skill_description">
-                  <span>SQL(MySQL/PostgreSQL)</span>
-                  <span>100%</span>
-                </div>
-                <div class="skill__bar">
-                  <div class="skill__value" style="width: 100%"></div>
-                </div>
-              </li>
-              <li>
-                <div class="skill_description">
-                  <span>Python(Pandas Library)</span>
-                  <span>100%</span>
-                </div>
-                <div class="skill__bar">
-                  <div class="skill__value" style="width: 100%"></div>
-                </div>
-              </li>
-            </ul>
-          </section>
-          <section class="skillset__right">
-            <h3 class="skillset__title">Tools</h3>
-            <ul class="tools__list">
-              <li>VSCode</li>
-              <li>Linear</li>
-              <li>Git & Github</li>
-              <li>Sourcetree</li>
-              <li>Slack</li>
-              <li>Notion</li>
-            </ul>
-          </section>
-          <section>
-            <h3 class="skillset__title">Etc</h3>
-            <ul class="etc__list">
-              <li>SQL</li>
-              <li>Soft Skills</li>
-              <li>Data Analysis</li>
-            </ul>
-          </section>
+        <div class="max-container">
+          <h2 class="title">Skills</h2>
+          <p class="description">Skills & Attributes</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+            tempora illo qui, at, in iste eum illum quidem nesciunt voluptatem
+            quisquam a repellendus aliquam quis exercitationem praesentium culpa
+            totam animi!
+          </p>
+          <div class="skills">
+            <section class="skills__coding">
+              <h3 class="skills__title">Skills</h3>
+              <ul>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>HTML</span>
+                    <span>95%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 95%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>CSS</span>
+                    <span>92%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 92%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>JavaScript</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 85%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>Typescript</span>
+                    <span>82%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 82%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>React</span>
+                    <span>87%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 87%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>Next.js</span>
+                    <span>87%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 87%"></div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section class="skills__tools">
+              <h3 class="skills__title">Tools</h3>
+              <ul>
+                <li>VSCode</li>
+                <li>Linear</li>
+                <li>Git & Github</li>
+                <li>Sourcetree</li>
+                <li>Slack</li>
+                <li>Notion</li>
+              </ul>
+            </section>
+            <section class="skills__etc">
+              <h3 class="skills__title">Etc</h3>
+              <ul>
+                <li>SQL</li>
+                <li>Soft Skills</li>
+                <li>Data Analysis</li>
+              </ul>
+            </section>
+          </div>
         </div>
       </section>
       <!-- Projects -->
       <section id="projects" class="section">
-        <h2>My work</h2>
-        <p>Projects</p>
-        <ul class="projects__categories">
-          <li>
-            <button class="category__btn" data-filter="*">
-              All<span class="category__count">8</span>
-            </button>
-          </li>
-          <li>
-            <button class="category__btn" data-filter="Indivisual">
-              Indivisual<span class="category__count">6</span>
-            </button>
-          </li>
-          <li>
-            <button class="category__btn" data-filter="Team">
-              Team<span class="category__count">2</span>
-            </button>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a
-              href="https://github.com/ParkSohyunee/order-summary-component"
-              class="project"
-              data-type="Indivisual"
-              target="_blank"
-            >
-              <img class="project_img" src="images\project1.png" alt="" />
-              <div class="project__dsecription">
-                <h3>Order summary card</h3>
-                <p>
-                  To build out this order summary card component(Desktop &
-                  Mobile) with HTML and CSS
-                </p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="project" data-type="Indivisual" target="_blank">
-              <img class="project_img" src="images\project2.png" />
-              <div class="project__dsecription">
-                <h3>project2_title</h3>
-                <p>project2_description</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="project" data-type="Indivisual" target="_blank">
-              <img class="project_img" src="images\project3.png" />
-              <div class="project__dsecription">
-                <h3>project3_title</h3>
-                <p>project3_description</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="project" data-type="Indivisual" target="_blank">
-              <img class="project_img" src="images\project4.png" />
-              <div class="project__dsecription">
-                <h3>project4_title</h3>
-                <p>project4_description</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="project" data-type="Indivisual" target="_blank">
-              <img class="project_img" src="images\project5.png" />
-              <div class="project__dsecription">
-                <h3>project5_title</h3>
-                <p>project5_description</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="project" data-type="Indivisual" target="_blank">
-              <img class="project_img" src="images\project6.png" />
-              <div class="project__dsecription">
-                <h3>project6_title</h3>
-                <p>project6_description</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="project" data-type="Indivisual" target="_blank">
-              <img class="project_img" src="images\project7.png" />
-              <div class="project__dsecription">
-                <h3>project7_title</h3>
-                <p>project7_description</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="project" data-type="Indivisual" target="_blank">
-              <img class="project_img" src="images\project8.png" />
-              <div class="project__dsecription">
-                <h3>project8_title</h3>
-                <p>project8_description</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <div class="projects__contents"></div>
+        <div class="max-container">
+          <h2 class="title">My work</h2>
+          <p class="description">Projects</p>
+          <ul class="projects__categories">
+            <li>
+              <button class="category__btn category--selected" data-filter="*">
+                All<span class="category__count">8</span>
+              </button>
+            </li>
+            <li>
+              <button class="category__btn" data-filter="Indivisual">
+                Indivisual<span class="category__count">6</span>
+              </button>
+            </li>
+            <li>
+              <button class="category__btn" data-filter="Team">
+                Team<span class="category__count">2</span>
+              </button>
+            </li>
+          </ul>
+          <ul class="projects">
+            <li class="project">
+              <a
+                href="https://github.com/ParkSohyunee/order-summary-component"
+                data-type="Indivisual"
+                target="_blank"
+              >
+                <img
+                  class="project__img"
+                  src="images\project1.png"
+                  alt="project-img"
+                />
+                <div class="project__dsecription">
+                  <h3 class="project__title">Order summary card</h3>
+                  <p>
+                    To build out component(Desktop & Mobile) with HTML and CSS
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" data-type="Indivisual" target="_blank">
+                <img
+                  class="project__img"
+                  src="images\project2.png"
+                  alt="project-img"
+                />
+                <div class="project__dsecription">
+                  <h3 class="project__title">project2_title</h3>
+                  <p>project2_description</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" data-type="Indivisual" target="_blank">
+                <img
+                  class="project__img"
+                  src="images\project3.png"
+                  alt="project-img"
+                />
+                <div class="project__dsecription">
+                  <h3 class="project__title">project3_title</h3>
+                  <p>project3_description</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" data-type="Indivisual" target="_blank">
+                <img
+                  class="project__img"
+                  src="images\project4.png"
+                  alt="project-img"
+                />
+                <div class="project__dsecription">
+                  <h3 class="project__title">project4_title</h3>
+                  <p>project4_description</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" data-type="Indivisual" target="_blank">
+                <img
+                  class="project__img"
+                  src="images\project5.png"
+                  alt="project-img"
+                />
+                <div class="project__dsecription">
+                  <h3 class="project__title">project5_title</h3>
+                  <p>project5_description</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" data-type="Indivisual" target="_blank">
+                <img
+                  class="project__img"
+                  src="images\project6.png"
+                  alt="project-img"
+                />
+                <div class="project__dsecription">
+                  <h3 class="project__title">project6_title</h3>
+                  <p>project6_description</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" data-type="Indivisual" target="_blank">
+                <img
+                  class="project__img"
+                  src="images\project7.png"
+                  alt="project-img"
+                />
+                <div class="project__dsecription">
+                  <h3 class="project__title">project7_title</h3>
+                  <p>project7_description</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" data-type="Indivisual" target="_blank">
+                <img
+                  class="project__img"
+                  src="images\project8.png"
+                  alt="project-img"
+                />
+                <div class="project__dsecription">
+                  <h3 class="project__title">project8_title</h3>
+                  <p>project8_description</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Reference -->
-      <section id="testimonial" class="section">
-        <h2>Testimonials</h2>
-        <p>See what they say about me</p>
-        <ul>
-          <li>
+      <section id="testimonial" class="section max-container">
+        <h2 class="title">Testimonials</h2>
+        <p class="description">See what they say about me</p>
+        <ul class="testimonials">
+          <li class="testimonial">
             <img
               src="images/testimonials/people1.webp"
               alt="people1"
-              class="testmonial_avater"
+              class="testmonial__img"
             />
-            <div class="testimonial__speech-bubble">
+            <div class="testimonial__speech__bubble">
               <p>
                 speech-bubble Lorem ipsum dolor sit amet consectetur adipisicing
                 elit. Minima, libero autem. Quisquam ducimus odio, quos tempora
                 fugit officiis tempore culpa corporis eos repellendus amet
                 labore in iure, mollitia harum itaque.
               </p>
-              <p class="name">coworker1</p>
+              <p class="speeach__bubble__name">coworker1</p>
             </div>
           </li>
-          <li>
+          <li class="testimonial">
             <img
               src="images/testimonials/people2.webp"
               alt="people2"
-              class="testmonial_avater"
+              class="testmonial__img"
             />
-            <div class="testimonial__speech-bubble">
+            <div class="testimonial__speech__bubble">
               <p>
                 speech-bubble Lorem ipsum dolor sit, amet consectetur
                 adipisicing elit. Numquam saepe blanditiis, enim illum aperiam
@@ -331,46 +380,52 @@
                 Nemo voluptatum blanditiis, perferendis in quo sequi.
                 Perferendis!
               </p>
-              <p class="name">coworker2</p>
+              <p class="speeach__bubble__name">coworker2</p>
             </div>
           </li>
-          <li>
+          <li class="testimonial">
             <img
               src="images/testimonials/people3.webp"
               alt="people3"
-              class="testmonial_avater"
+              class="testmonial__img"
             />
-            <div class="testimonial__speech-bubble">
+            <div class="testimonial__speech__bubble">
               <p>
                 speech-bubble Lorem ipsum dolor sit amet consectetur adipisicing
                 elit. Saepe nostrum totam facilis illo consectetur earum nam
                 temporibus ab dignissimos molestias facere nesciunt expedita,
                 atque fuga soluta sequi autem. Placeat, esse.
               </p>
-              <p class="name">coworker3</p>
+              <p class="speeach__bubble__name">coworker3</p>
             </div>
           </li>
         </ul>
       </section>
       <!-- Arrow up -->
       <aside>
-        <a href="#home" title="back to top">
+        <a class="arrow-up" href="#home" title="back to top">
           <i class="fa-solid fa-arrow-up"></i>
         </a>
       </aside>
     </main>
     <!-- Footer -->
-    <footer id="contact">
-      <h2 class="contact__title">Let&#39;s talk</h2>
-      <p class="contact__emaile">✉️ sohyunee016@gmail.com</p>
-      <ul class="contact__links">
-        <li>
-          <a href="https://github.com/ParkSohyunee" target="_blank">
-            <i class="fa-regular fa-user"></i>
-          </a>
-        </li>
-      </ul>
-      <p class="contact__rights">© Park So Hyun - All rignts reserved</p>
+    <footer id="contact" class="section">
+      <div class="max-container">
+        <h2 class="title">Let&#39;s talk</h2>
+        <p class="description">✉️ sohyunee016@gmail.com</p>
+        <ul class="contact__links">
+          <li>
+            <a
+              class="contact__link"
+              href="https://github.com/ParkSohyunee"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="contact__rights">© Park So Hyun - All rignts reserved</p>
+      </div>
     </footer>
   </body>
 </html>
