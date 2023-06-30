@@ -62,8 +62,8 @@ button {
   border: none;
   outline: none;
 
-  & :focus {
-    outline: 1px solid var(--color-accent);
+  &:focus {
+    outline: 1px solid transparent;
   }
 }
 
@@ -92,7 +92,7 @@ button {
 .header {
   top: 0;
   width: 100%;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   position: fixed;
   background-color: transparent;
   display: flex;
@@ -120,18 +120,30 @@ button {
 }
 
 .header__logo__title {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  white-space: nowrap;
 }
 
 /* Navbar */
+.header__toggle {
+  display: none;
+  font-size: 1.5rem;
+  color: var(--color-white);
+  position: absolute;
+  right: 1rem;
+  top: 1.8rem;
+}
+
 .navbar__menu {
   display: flex;
   gap: 4px;
 }
 
 .navbar__menu__item {
+  display: block;
   padding: 0.5rem 1rem;
   cursor: pointer;
+  border-bottom: 1px solid transparent;
 }
 
 .navbar__menu__item.active {
@@ -491,7 +503,7 @@ button {
 /* Media-Query */
 @media screen and (max-width: 768px) {
   .section {
-    padding: 3rem 2rem;
+    padding: 4.5rem 2rem;
   }
 
   .title {
@@ -505,13 +517,23 @@ button {
   .header {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-primary);
+  }
+
+  .header__toggle {
+    display: block;
   }
 
   .navbar__menu {
-    padding: 1rem 4rem;
+    display: none;
+    margin: 1rem 4rem;
     flex-direction: column;
     text-align: center;
     gap: 1rem;
+  }
+
+  .navbar__menu.open {
+    display: flex;
   }
 
   .header__nav {
