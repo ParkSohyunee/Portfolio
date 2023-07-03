@@ -1,3 +1,5 @@
+"use strict";
+
 // Header에 페이지 아래로 스크롤시 다크 스타일링 적용
 const header = document.querySelector(".header");
 const headerHeight = header.getBoundingClientRect().height; // border-box인 경우 scrollHeight(단, 반올림)와 높이가 같음 cf) offsetHeight

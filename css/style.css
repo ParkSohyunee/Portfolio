@@ -378,12 +378,22 @@ button {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
+  transition: all 1000ms ease;
+}
+
+.projects.animation-out {
+  opacity: 0;
+  transform: scale(0.96) translateY(20px);
 }
 
 .project {
   position: relative;
   border-radius: var(--medium-border-radius);
   overflow: hidden;
+}
+
+.invisible {
+  display: none;
 }
 
 .project__img {
@@ -558,8 +568,20 @@ button {
     max-width: 25rem;
   }
 
+  .projects__categories {
+    flex-direction: column;
+  }
+
+  .category__btn {
+    width: 100%;
+  }
+
   .category {
     justify-content: center;
+  }
+
+  .category__count {
+    right: 15px;
   }
 
   .skills {

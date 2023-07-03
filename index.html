@@ -32,7 +32,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- JavaScript -->
-    <script src="src/main.js" defer></script>
+    <script type="module" src="src/main.js" defer></script>
+    <script type="module" src="src/projects.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -221,7 +222,10 @@
           <p class="description">Projects</p>
           <ul class="projects__categories">
             <li>
-              <button class="category__btn category--selected" data-filter="*">
+              <button
+                class="category__btn category--selected"
+                data-filter="All"
+              >
                 All<span class="category__count">8</span>
               </button>
             </li>
@@ -237,16 +241,15 @@
             </li>
           </ul>
           <ul class="projects">
-            <li class="project">
+            <li class="project" data-type="Indivisual">
               <a
                 href="https://github.com/ParkSohyunee/order-summary-component"
-                data-type="Indivisual"
                 target="_blank"
               >
                 <img
                   class="project__img"
                   src="images\project1.png"
-                  alt="project-img"
+                  alt="project1-img"
                 />
                 <div class="project__dsecription">
                   <h3 class="project__title">Order summary card</h3>
@@ -256,12 +259,12 @@
                 </div>
               </a>
             </li>
-            <li class="project">
-              <a href="#" data-type="Indivisual" target="_blank">
+            <li class="project" data-type="Team">
+              <a href="#" target="_blank">
                 <img
                   class="project__img"
                   src="images\project2.png"
-                  alt="project-img"
+                  alt="project2-img"
                 />
                 <div class="project__dsecription">
                   <h3 class="project__title">project2_title</h3>
@@ -269,12 +272,12 @@
                 </div>
               </a>
             </li>
-            <li class="project">
-              <a href="#" data-type="Indivisual" target="_blank">
+            <li class="project" data-type="Team">
+              <a href="#" target="_blank">
                 <img
                   class="project__img"
                   src="images\project3.png"
-                  alt="project-img"
+                  alt="project3-img"
                 />
                 <div class="project__dsecription">
                   <h3 class="project__title">project3_title</h3>
@@ -282,12 +285,12 @@
                 </div>
               </a>
             </li>
-            <li class="project">
-              <a href="#" data-type="Indivisual" target="_blank">
+            <li class="project" data-type="Indivisual">
+              <a href="#" target="_blank">
                 <img
                   class="project__img"
                   src="images\project4.png"
-                  alt="project-img"
+                  alt="project4-img"
                 />
                 <div class="project__dsecription">
                   <h3 class="project__title">project4_title</h3>
@@ -295,12 +298,12 @@
                 </div>
               </a>
             </li>
-            <li class="project">
-              <a href="#" data-type="Indivisual" target="_blank">
+            <li class="project" data-type="Indivisual">
+              <a href="#" target="_blank">
                 <img
                   class="project__img"
                   src="images\project5.png"
-                  alt="project-img"
+                  alt="project5-img"
                 />
                 <div class="project__dsecription">
                   <h3 class="project__title">project5_title</h3>
@@ -308,12 +311,12 @@
                 </div>
               </a>
             </li>
-            <li class="project">
-              <a href="#" data-type="Indivisual" target="_blank">
+            <li class="project" data-type="Indivisual">
+              <a href="#" target="_blank">
                 <img
                   class="project__img"
                   src="images\project6.png"
-                  alt="project-img"
+                  alt="project6-img"
                 />
                 <div class="project__dsecription">
                   <h3 class="project__title">project6_title</h3>
@@ -321,12 +324,12 @@
                 </div>
               </a>
             </li>
-            <li class="project">
-              <a href="#" data-type="Indivisual" target="_blank">
+            <li class="project" data-type="Indivisual">
+              <a href="#" target="_blank">
                 <img
                   class="project__img"
                   src="images\project7.png"
-                  alt="project-img"
+                  alt="project7-img"
                 />
                 <div class="project__dsecription">
                   <h3 class="project__title">project7_title</h3>
@@ -334,12 +337,12 @@
                 </div>
               </a>
             </li>
-            <li class="project">
-              <a href="#" data-type="Indivisual" target="_blank">
+            <li class="project" data-type="Indivisual">
+              <a href="#" target="_blank">
                 <img
                   class="project__img"
                   src="images\project8.png"
-                  alt="project-img"
+                  alt="project8-img"
                 />
                 <div class="project__dsecription">
                   <h3 class="project__title">project8_title</h3>
