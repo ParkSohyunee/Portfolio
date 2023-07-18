@@ -14,6 +14,13 @@
   --color-accent-variant: var(--color-orange);
   --color-text: var(--color-white);
 
+  /* Background */
+  --home-bg-gradient: linear-gradient(
+    180deg,
+    rgba(5, 10, 19, 1) 0%,
+    rgba(13, 34, 73, 1) 100%
+  );
+
   /* Font size */
   --font-large: 48px;
   --font-medium: 28px;
@@ -170,6 +177,7 @@ button {
   padding-top: 7rem;
   text-align: center;
   background-color: var(--color-primary);
+  background: var(--home-bg-gradient);
   color: var(--color-text);
   position: relative;
 }
